@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Parabéns Suelen & Sam!</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #fdf6e3;
+    text-align: center;
+    padding: 50px;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+h1 {
+    color: #e91e63;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 4px #aaa;
+}
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes fall {
+    0% {transform: translateY(-50px) rotate(0deg);}
+    100% {transform: translateY(100vh) rotate(360deg);}
+}
+</style>
+</head>
+<body>
+
+<h1>🎉🎂 Parabéns atrasado! 🎂🎉</h1>
+
+<p><strong>Para a incrível Suelen:</strong></p>
+<p>Mesmo que atrasado, quero te desejar um dia extraordinário! 💖</p>
+<p>Lembre-se de Auggie em Extraordinário: 'Escolha ser gentil!' 🥰</p>
+<p>Que seus dias sejam tão refrescantes quanto um copo de água de coco 🥥</p>
+<p>Amo vocês e sempre podem contar comigo! 💛</p>
+
+<p><strong>E para Sam, a cachorrinha mais fofa do mundo! 🐶🎉</strong></p>
+<p>Muitas lambidas, brincadeiras e petiscos deliciosos! 🦴💛</p>
+
+<pre>
+   🎈   🎉  🎈   🎉   🎈
+🎉   🎈   🎉   🎈   🎉
+   🎈   🎉  🎈   🎉   🎈
+🎉   🎈   🎉   🎈   🎉
+</pre>
+
+<p>Que vocês duas tenham um ano extraordinário, cheio de alegrias, surpresas e muita água de coco! 🥥🐾🎉</p>
+<p>Feliz Aniversário atrasado, Suelen e Sam! 🎂💖</p>
+<p>Com amor e carinho, sempre conte comigo! 💛</p>
+
+<!-- Música automática (YouTube) -->
+<iframe width="0" height="0" src="https://www.youtube.com/embed/hjUq4IRjYtY?autoplay=1&loop=1&playlist=hjUq4IRjYtY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<script>
+// Criar confetes animados
+for(let i=0;i<100;i++){
+    let conf = document.createElement("div");
+    conf.className = "confetti";
+    conf.style.left = Math.random()*window.innerWidth + "px";
+    conf.style.width = conf.style.height = (5 + Math.random()*10) + "px";
+    conf.style.backgroundColor = `hsl(${Math.random()*360}, 100%, 50%)`;
+    conf.style.animationDuration = (3 + Math.random()*5) + "s";
+    conf.style.animationDelay = Math.random()*5 + "s";
+    document.body.appendChild(conf);
+}
+</script>
+
+</body>
+</html>
